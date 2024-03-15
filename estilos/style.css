@@ -78,7 +78,7 @@ main {
 
 .btn__encriptar:hover {
     background-color: var(--cor-secundaria);
-    color: var(--cor-primaria)
+    color: var(--cor-primaria);
 }
 
 .btn__descriptar {
@@ -169,7 +169,7 @@ main {
 
 .rodape__destaque {
     background-color: var(--cor-primaria);
-    font-weight: bold
+    font-weight: bold;
 }
 
 .rodape__links {
