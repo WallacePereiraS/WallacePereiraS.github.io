@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --cor-primaria: #0A3871;
+    --cor-secundaria: #D8DFE8;
+    --cor-terciaria: white;
+    --cor-fundo: #E5E5E5;
+    --cor-info: #495057;
+}
+
+* {
+    background-color: var(--cor-fundo);
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    padding: 0% 10% 1%;
+    gap: 82px;
+}
+
+.primeira__sessao {
+    width: 70%;
+    padding: 2% 0% 0%;
+}
+
+.logo__alura {
+    padding: 2% 2% 0%;
+    width: 65px;
+}
+
+.texto__inicial {
+    border: none;
+    color: var(--cor-primaria);
+    padding: 5% 0% 5%;
+    text-transform: lowercase;
+    width: 100%;
+    font-size: 2rem;
+}
+
+::placeholder {
+    color: var(--cor-primaria);
+}
+
+.texto__inicial:focus {
+    outline: none;
+}
+
+.info {
+    color: var(--cor-info);
+    font-size: 1.56rem;
+    padding: 10% 0% 1%;
+}
+
+.botoes {
+    display: flex;
+    gap: 3%;
+}
+
+.btn__encriptar {
+    background-color: var(--cor-primaria);
+    border: 1px solid var(--cor-primaria);
+    border-radius: 24px;
+    color: var(--cor-secundaria);
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+    font-size: 1.56rem;
+    line-height: 150%;
+}
+
+.btn__encriptar:hover {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria)
+}
+
+.btn__descriptar {
+    background: var(--cor-fundo);
+    border: 1px solid var(--cor-primaria);
+    border-radius: 24px;
+    color: var(--cor-primaria);
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+    font-size: 1.56rem;
+    line-height: 150%;
+}
+
+.btn__descriptar:hover {
+    background: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.segunda__sessao {
+    width: 30%;
+    padding: 0% 0%;
+    position: relative;
+}
+
+.texto__resultado {
+    background-color: var(--cor-terciaria);
+    border: 20px solid var(--cor-terciaria);
+    border-radius: 24px;
+    color: var(--cor-primaria);
+    position: absolute;
+    z-index: 1;
+    height: 94%;
+    font-size: 2rem;
+    line-height: 145%;
+}
+
+.texto__resultado:focus {
+    outline: none;
+}
+
+.figura {
+    position: absolute;
+    z-index: 2;
+    visibility: visible;
+    background: none;
+    margin-left: 5%;
+    margin-top: 10%;
+}
+
+.btn__copiar {
+    border: 1px solid var(--cor-primaria);
+    border-radius: 24px;
+    color: var(--cor-primaria);
+    background: var(--cor-fundo);
+    cursor: pointer;
+    height: 67px;
+    margin-left: 12%;
+    margin-top: 143%;
+    position: relative;
+    width: 336px;
+    font-size: 1.56rem;
+    line-height: 150%;
+    z-index: 2;
+}
+
+.btn__copiar:hover {
+    background: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.rodape {
+    display: flex;
+    background-color: var(--cor-primaria);
+    gap: 2%;
+    padding: 1%;
+    flex-direction: column;
+
+}
+
+.rodape__texto {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    margin-left: 40%;
+    font-size: 1.25rem;
+    margin-top: 0.3%;
+}
+
+.rodape__destaque {
+    background-color: var(--cor-primaria);
+    font-weight: bold
+}
+
+.rodape__links {
+    background-color: var(--cor-primaria);
+    margin-left: 45%;
+}
+
+.rodape__links__fundo {
+    background-color: var(--cor-primaria);
+}
+
+.rodape__links__logo {
+    margin-left: 5%;
+    width: 7%;
+    background-color: var(--cor-primaria);
+    margin-top: 1%;
+}
+
+@media (max-width: 1200px) {
+
+    main {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        gap: 5%;
+    }
+
+    .primeira__sessao {
+        padding: 4%;
+        width: auto;
+    }
+
+    .logo__alura {
+        padding: 2% 2%;
+        width: auto;
+    }
+
+    .info {
+        padding: 7% 0% 1%;
+    }
+
+    .botoes {
+        margin-left: 1.5%;
+    }
+
+    .segunda__sessao {
+        width: 100%;
+        position: relative;
+    }
+
+    .texto__resultado {
+        width: 90%;
+        margin-left: 2%;
+        height: 100%;
+        padding: 0% 0% 0%;
+    }
+
+    .figura {
+        margin-left: 30%;
+        margin-top: 30%;
+    }
+
+    .btn__copiar {
+        margin-top: 100%;
+        margin-left: 30%;
+    }
+
+    .rodape {
+        margin-top: 8%;
+    }
+
+    .rodape__texto {
+        margin-left: 30%;
+    }
+
+    .rodape__links {
+        margin-left: 43%;
+    }
+}

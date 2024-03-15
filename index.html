@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de texto</title>
+    <link rel="stylesheet" href="./estilos/style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <a href="index.html">
+            <img class="logo__alura" src="./assets/logo.svg" alt="Logo da Alura">
+        </a>
+    </header>
+
+    <main>
+        <section class="primeira__sessao">
+            <textarea class="texto__inicial" cols="50" rows="7" placeholder="Digite seu texto"></textarea>
+
+            <div class="info">
+                <h6>&#128712 Apenas letras minusculas e sem acento.</h6>
+            </div>
+
+            <div class="botoes">
+                <button class="btn__encriptar" onclick="botaoEncriptar()">Criptografar</button>
+                <button class="btn__descriptar" onclick="botaoDescriptar()">Descriptografar</button>
+            </div>
+
+        </section>
+        <section class="segunda__sessao">
+            <img class="figura" id="figura" src="./assets/figura.png">
+            <textarea class="texto__resultado" cols="17" rows="11"></textarea>
+            <button class="btn__copiar" onclick="botaoCopiar()">Copiar</button>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p class="rodape__texto">Desenvolvido por <strong class="rodape__destaque"> Wallace Pereira</strong></p>
+        <div class="rodape__links">
+            <a class="rodape__links__fundo" href="https://www.linkedin.com/in/wallace-pereira-s/">
+                <img class="rodape__links__logo" src="./assets/linkedin.png" alt="Linkedin">
+            </a>
+            <a class="rodape__links__fundo" href="https://github.com/WallacePereiraS">
+                <img class="rodape__links__logo" src="./assets/github.png" alt="Github">
+            </a>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
