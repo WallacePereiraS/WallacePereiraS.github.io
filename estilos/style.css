@@ -136,8 +136,8 @@ main {
     background: var(--cor-fundo);
     cursor: pointer;
     height: 67px;
-    margin-left: 12%;
-    margin-top: 143%;
+    margin-left: 7%;
+    margin-top: 140%;
     position: relative;
     width: 336px;
     font-size: 1.56rem;
@@ -156,6 +156,7 @@ main {
     gap: 2%;
     padding: 1%;
     flex-direction: column;
+    margin-top: 2%;
 
 }
 
@@ -174,7 +175,8 @@ main {
 
 .rodape__links {
     background-color: var(--cor-primaria);
-    margin-left: 45%;
+    margin-left: 44%;
+    margin-top: 0.5%;
 }
 
 .rodape__links__fundo {
@@ -186,4 +188,117 @@ main {
     width: 7%;
     background-color: var(--cor-primaria);
     margin-top: 1%;
+}
+
+@media (max-width: 800px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        padding: 0%;
+        margin: 0%;
+        gap: 20px;
+    }
+
+    .segunda__sessao {
+        width: 90%;
+        height: 700px;
+    }
+
+    .texto__resultado {
+        width: 80%;
+        height: 94%;
+        margin-left: 7%;
+    }
+
+    .figura {
+        margin-top: 30%;
+        margin-left: 25%;
+    }
+
+    .btn__copiar {
+        margin-left: 25%;
+        margin-top: 90%;
+    }
+
+    .rodape__texto {
+        margin-left: 29%;
+    }
+
+    .rodape__links {
+        margin-left: 40%;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        flex-direction: column;
+        padding: 0%;
+        margin: 0%;
+        gap: 15px;
+    }
+
+    .primeira__sessao {
+        width: 100%;
+        padding: 0% 0%;
+    }
+
+    .texto__inicial {
+        margin-left: 4%;
+        width: 95%;
+        height: 60%;
+    }
+
+    .info {
+        margin-left: 4%;
+        padding: 1%;
+    }
+
+    .botoes {
+        margin-left: 4%;
+    }
+
+    .btn__encriptar {
+        width: 47%;
+        font-size: 1.4rem;
+        height: auto;
+    }
+
+    .btn__descriptar {
+        width: 47%;
+        font-size: 1.4rem;
+        height: auto;
+    }
+
+    .segunda__sessao {
+        width: 100%;
+        padding: 1% 0%;
+        height: 0%;
+    }
+
+    .texto__resultado {
+        margin-left: 4%;
+        width: 83%;
+        height: 90%;
+    }
+
+    .figura {
+        margin-left: 5%;
+    }
+
+    .btn__copiar {
+        width: 60%;
+        margin-bottom: 3%;
+        margin-left: 22%;
+        height: 100%;
+        margin-top: 110%;
+    }
+
+    .rodape__texto {
+        margin-left: 8%;
+
+    }
+
+    .rodape__links {
+        margin-left: 45%;
+    }
 }
